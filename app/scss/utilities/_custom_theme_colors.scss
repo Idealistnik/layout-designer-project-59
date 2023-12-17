@@ -1,0 +1,9 @@
+@use "sass:map";
+
+// Создайте свою карту
+$custom-colors: (
+  "my-gray": #efefef
+);
+
+// Объедините карты
+$theme-colors: map-merge($theme-colors, $custom-colors);

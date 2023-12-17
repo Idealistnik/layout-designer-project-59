@@ -1,1 +1,80 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "_custom_variables";
+
+// Подключаем базовые функции, переменные и миксины
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+@import "./utilities/custom_theme_colors";
+@import "./utilities/_custom_breakpoint";
+
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Подключаем файл с нашими утилитами
+
+@import "./utilities/_custom_utilities";
+@import "./_started_page";
+
+// Подключаем генерацию утилит
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// Подключаем весь Bootstrap
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// // Custom.scss
+// // Вариант Б. Включите части Bootstrap
+
+// // 1. Сначала включите функции (чтобы Вы могли управлять цветами, SVG, вычислением и т.д.)
+// @import "../../node_modules/bootstrap/scss/functions";
+
+// // 2. Включите сюда любые переопределения переменных по умолчанию
+// @import "./_custom_variables";
+// @import "./utilities/_custom_theme_colors";
+
+// // @import "./utilities/_custom_utilities";
+
+// // 3. Включите остальные требуемые таблицы стилей Bootstrap (включая любые отдельные таблицы стилей цветового режима)
+
+// @import "../../node_modules/bootstrap/scss/type";
+// @import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/containers";
+// @import "../../node_modules/bootstrap/scss/grid";
+// @import "../../node_modules/bootstrap/scss/helpers";
+
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/variables-dark";
+// @import "../../node_modules/bootstrap/scss/utilities";
+
+
+
+// // 4. Включите сюда любые переопределения карт по умолчанию
+// // @import "./utilities/_custom_theme_colors";
+// @import "./utilities/_custom_breakpoint";
+// @import "./utilities/_custom_utilities";
+
+// // 5. Include remainder of required parts
+// @import "../../node_modules/bootstrap/scss/maps";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/root";
+
+// // 6. При необходимости включите любые другие части
+// // @import "../../node_modules/bootstrap/scss/utilities";
+// // @import "../../node_modules/bootstrap/scss/reboot";
+// // @import "../../node_modules/bootstrap/scss/type";
+// // @import "../../node_modules/bootstrap/scss/images";
+// // @import "../../node_modules/bootstrap/scss/containers";
+// // @import "../../node_modules/bootstrap/scss/grid";
+// // @import "../../node_modules/bootstrap/scss/helpers";
+
+// // 7. При желании добавьте API утилит в последнюю очередь, чтобы генерировать классы на основе карты Sass в `_utilities.scss`
+// @import "../node_modules/bootstrap/scss/utilities/api";
+
+// // 8. Добавьте сюда дополнительный пользовательский код

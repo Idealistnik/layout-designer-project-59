@@ -1,0 +1,19 @@
+.visibility-chat {
+  display: none;
+}
+
+@include media-breakpoint-up(md) {
+  .visibility-chat {
+    display: block;
+  }
+}
+
+.rounded-left-top {
+  @include border-top-start-radius(1rem);
+}
+
+@mixin border-top-start-radius($radius: $border-radius) {
+  @if $enable-rounded {
+    border-top-left-radius: valid-radius($radius);
+  }
+}

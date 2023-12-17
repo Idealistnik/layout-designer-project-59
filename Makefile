@@ -15,6 +15,9 @@ build-file:
 server:
 	npx gulp server
 
+watchers:
+	npx gulp watchers
+
 conv:
 	npx pug ./app/pages/index.pug --pretty -w -o ./build/index.html
 

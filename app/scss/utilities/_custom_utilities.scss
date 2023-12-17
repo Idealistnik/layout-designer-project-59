@@ -1,0 +1,23 @@
+@use 'sass:map';
+
+$utilities: map.merge($utilities,
+  ("padding-top-3rem": (property: padding-top,
+      class: pg-top,
+      values: 3rem,
+    )));
+
+
+$utilities: map.merge($utilities,
+  ("padding-y-3rem": (property: padding-top padding-bottom,
+      class: pg-y,
+      values: 3rem,
+    )));
+
+
+// не получается сделать значение 1.5 ?? ((
+
+// $utilities: map.merge($utilities,
+//   ("padding-x-1.5rem": (property: padding-left padding-right,
+//       class: pg-x,
+//       values: 2rem, // 1.5 выдает ошибку
+//     )));
