@@ -12,8 +12,3 @@
   @include border-top-start-radius(1rem);
 }
 
-@mixin border-top-start-radius($radius: $border-radius) {
-  @if $enable-rounded {
-    border-top-left-radius: valid-radius($radius);
-  }
-}

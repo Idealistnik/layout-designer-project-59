@@ -1,8 +1,10 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+
 @import "_custom_variables";
 
 // Подключаем базовые функции, переменные и миксины
 
-@import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
 
@@ -13,11 +15,12 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/utilities";
 
 // Подключаем файл с нашими утилитами
 
 @import "./utilities/_custom_utilities";
-@import "./_started_page";
+@import "./general/_started_page";
 
 // Подключаем генерацию утилит
 
@@ -27,6 +30,9 @@
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./components/avatar";
+@import "./components/contacts";
 
 
 // // Custom.scss

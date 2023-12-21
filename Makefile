@@ -23,3 +23,6 @@ conv:
 
 conv-s:
 	sass --watch ./app/scss/app.scss:./build/styles/app.css
+
+ss:
+	code .

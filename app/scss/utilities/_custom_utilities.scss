@@ -21,3 +21,18 @@ $utilities: map.merge($utilities,
 //       class: pg-x,
 //       values: 2rem, // 1.5 выдает ошибку
 //     )));
+
+
+@mixin hide-scrollbar() {
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

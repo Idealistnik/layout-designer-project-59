@@ -33,7 +33,7 @@ const buildPug = () => {
 }
 
 const watchers = () => {
-  watch('app/*.pug', {
+  watch('app/**/*.pug', {
     events: 'change'
   }, buildPug);
   watch('app/scss/**/*.scss', {
