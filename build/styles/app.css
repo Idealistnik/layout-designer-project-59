@@ -1,15 +1,55 @@
 @charset "UTF-8";
-.visibility-chat {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .visibility-chat {
-    display: block;
+@media (max-width: 575.98px) {
+  .container-new-xxl.p-4 {
+    padding: 0 !important;
+  }
+  .text-hidden {
+    font-size: 0 !important;
+  }
+  .imagin.logo-header {
+    width: 15px;
+    height: 25px;
+    margin-left: 5px !important;
+    margin-right: 0 !important;
+  }
+  a.m-r-auto {
+    margin-right: auto !important;
+  }
+  .nav-link .avatar-white {
+    margin-right: 0 !important;
+  }
+  a.nav-link {
+    margin-right: 40px !important;
+    margin-left: 0 !important;
+  }
+  a.nav-link:last-of-type {
+    margin-right: 24px !important;
+  }
+  .row.rounded-4,
+  .rounded-left-top {
+    border-radius: 0 !important;
+  }
+  header {
+    position: sticky !important;
+    bottom: 0 !important;
   }
 }
 .rounded-left-top {
   border-top-left-radius: 1rem;
+}
+
+.avatar-white {
+  filter: invert(1);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  border-color: #4545A5 !important;
+  background-color: #4545A5 !important;
+}
+
+.color {
+  background-color: #4545A5;
 }
 
 .align-baseline {
@@ -5440,7 +5480,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: Roboto;
+  --bs-font-sans-serif: Roboto, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -18319,10 +18359,6 @@ textarea.form-control-lg {
   display: none;
 }
 
-.contacts-list p:first-of-type {
-  margin-top: 0;
-}
-
 .link-contacts {
   color: inherit;
 }
@@ -18331,6 +18367,30 @@ textarea.form-control-lg {
   background-color: #4545A5;
 }
 
-.color {
+.chats {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.chats::-webkit-scrollbar {
+  display: none;
+}
+
+.time {
+  color: #adb5bd;
+}
+
+.link-chats {
+  color: inherit;
+}
+
+.focus:hover {
   background-color: #4545A5;
+}
+
+.overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

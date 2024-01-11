@@ -18,30 +18,29 @@ body.h-100
 
         div.tab-content(id='nav-tabContent')
           header.bg-primary.rounded-left-top
-            nav
+            nav             
               div.nav.nav-tabs(id='nav-tab' role='tablist').align-items-center.p-3
-                //- justify-content-between.align-items-center
-                //- button.nav-link(id='logo' data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled)
-                //-   img(src='../app/images/logo.svg' width=25 height=40 alt='')
-                a
-                  img(src='./images/logo.svg' width=25 height=40 alt='').m-3
-                a.nav-link.p-0.link-light.active.color(href='#nav-contacts' data-bs-toggle='tab' data-bs-target='#nav-contacts' type='button' role='tab' aria-controls='nav-contacts' aria-selected='true').me-4
-                  img(src='./images/people.svg' width=25 height=25 alt='').me-2
-                  small Контакты         
+                a.me-3.m-r-auto
+                  img(src='./images/logo.svg' width=25 height=40 alt='').avatar-white.me-1.logo-header.imagin
+                
+                a.nav-link.p-0.link-light.active.color(id='#contacts' href='#nav-contacts' data-bs-toggle='tab' data-bs-target='#nav-contacts' type='button' role='tab' aria-controls='nav-contacts' aria-selected='true').mobile-margin.border.border-0.me-4.ms-2.my-2
+                  img(src='./images/people.svg' width=25 height=25 alt='').me-2.avatar-white
+                  small.text-hidden Контакты         
                   
-                a.nav-link.p-0.link-light.color(href='#nav-chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='false').me-4.ms-2
-                  img(src='./images/chat.svg' width=25 height=25 alt='').me-2
-                  small Сообщения              
+                a.nav-link.p-0.link-light.color(id='#chats' href='#nav-chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='false').border.border-0.me-4.ms-2.my-2
+                  img(src='./images/chat.svg' width=25 height=25 alt='').me-2.avatar-white
+                  small.text-hidden Сообщения              
                   
-                a.nav-link.p-0.link-light.color(href='#nav-profile' data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false').ms-2
-                  img(src='./images/person.svg' width=25 height=25 alt='').me-2
-                  small Профиль
+                a.nav-link.p-0.link-light.color(id='#profile' href='#nav-profile' data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false').border.border-0.ms-2.my-2
+                  img(src='./images/person.svg' width=25 height=25 alt='').me-2.avatar-white
+                  small.text-hidden Профиль 
           div.tab-pane.fade.show.active(id='nav-contacts' role='tabpanel' aria-labelledby='nav-contacts' tabindex='0')
             div.pg-y-3rem.px-4.contacts.h-100
               include pug_sections/contacts.pug            
 
           div.tab-pane.fade(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats' tabindex='0')
-            p 121213
+            div.pg-y-3rem.px-4.contacts.h-100
+              include pug_sections/chats.pug 
           div.tab-pane.fade(id='nav-profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
             p 121213efefef
 

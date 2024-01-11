@@ -42,15 +42,12 @@ section.contacts.h-100
     input(type='search' id='contacts-search'  aria-label='contacts-search' placeholder='Поиск по контактам').form-control.px-4.py-4.border-0.border-bottom.border-gray.rounded-0.text-secondary.shadow-none
   div.contacts-list  
     each user_info, letter in contacts
-      p.text-muted.mt-5 #{letter}      
+      p.text-muted.mt-5= letter  
       each user in user_info
         div.border-bottom.border-gray.shadow-sm.mb-3
           a(href='#').link-contacts.focus.link-underline.link-underline-opacity-0.d-flex                 
             div.d-flex.align-items-center
-              img(width=50 height=50 src= user.avatar).img-contacts.rounded-circle.ms-3.me-4
+              img(width=50 height=50 src= user.avatar).rounded-circle.ms-3.me-4
               div.py-4
                 span.fw-bold.d-block= user.name
                 small.text-secondary= user.status
-
-//- a(href='#').link-contacts.link-underline.link-underline-opacity-0
-//- 

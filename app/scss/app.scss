@@ -20,7 +20,7 @@
 // Подключаем файл с нашими утилитами
 
 @import "./utilities/_custom_utilities";
-@import "./general/_started_page";
+@import "./general/_general";
 
 // Подключаем генерацию утилит
 
@@ -33,6 +33,7 @@
 
 @import "./components/avatar";
 @import "./components/contacts";
+@import "./components/chats";
 
 
 // // Custom.scss
