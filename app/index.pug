@@ -1,5 +1,5 @@
 DOCTYPE(html)
-html(lang='en')
+html(lang='ru').h-100
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
@@ -9,39 +9,43 @@ head
   link(rel='stylesheet' href='../node_modules/bootstrap/scss/bootstrap')
   script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
  
-body
-  div.container-new-xxl.min-vh-100.bg-gray.p-4
-    div.row.m-0.bg-white.rounded-4
-      section.col-md-4.border-end.border-gray.px-0
-        header.bg-primary.rounded-left-top    
-          nav     
-            div.nav.nav-tabs(id='nav-tab' role='tablist')
-              //- justify-content-between.align-items-center
-              //- button.nav-link(id='logo' data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled)
-              //-   img(src='../app/images/logo.svg' width=25 height=40 alt='')
-              img(src='../app/images/logo.svg' width=25 height=40 alt='')
-              button.nav-link.p-0.link-light.active(id='nav-contacts' data-bs-toggle='tab' data-bs-target='#nav-contacts' type='button' role='tab' aria-controls='nav-contacts' aria-selected='true')
-                img(src='../app/images/people.svg' width=25 height=25 alt='').me-2
-                small Контакты        
-                
-              button.nav-link.p-0.link-light(id='nav-chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='false') 
-                img(src='../app/images/chat.svg' width=25 height=25 alt='').me-2
-                small Сообщения              
-                
-              button.nav-link.p-0.link-light(id='nav-profile' data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false')
-                img(src='../app/images/person.svg' width=25 height=25 alt='').me-2
-                small Профиль
+body.h-100
+  div.container-new-xxl.min-vh-100.bg-gray.p-4.h-100
+    div.row.m-0.bg-white.rounded-4.h-100
+      section.col-md-4.border-end.border-gray.px-0.h-100.overflow-hidden
+        
+       
 
-          div.tab-content(id='nav-tabContent')
-            div.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts' tabindex='0')
-              
+        div.tab-content(id='nav-tabContent')
+          header.bg-primary.rounded-left-top
+            nav
+              div.nav.nav-tabs(id='nav-tab' role='tablist').align-items-center.p-3
+                //- justify-content-between.align-items-center
+                //- button.nav-link(id='logo' data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled)
+                //-   img(src='../app/images/logo.svg' width=25 height=40 alt='')
+                a
+                  img(src='./images/logo.svg' width=25 height=40 alt='').m-3
+                a.nav-link.p-0.link-light.active.color(href='#nav-contacts' data-bs-toggle='tab' data-bs-target='#nav-contacts' type='button' role='tab' aria-controls='nav-contacts' aria-selected='true').me-4
+                  img(src='./images/people.svg' width=25 height=25 alt='').me-2
+                  small Контакты         
+                  
+                a.nav-link.p-0.link-light.color(href='#nav-chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='false').me-4.ms-2
+                  img(src='./images/chat.svg' width=25 height=25 alt='').me-2
+                  small Сообщения              
+                  
+                a.nav-link.p-0.link-light.color(href='#nav-profile' data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false').ms-2
+                  img(src='./images/person.svg' width=25 height=25 alt='').me-2
+                  small Профиль
+          div.tab-pane.fade.show.active(id='nav-contacts' role='tabpanel' aria-labelledby='nav-contacts' tabindex='0')
+            div.pg-y-3rem.px-4.contacts.h-100
+              include pug_sections/contacts.pug            
 
-            div.tab-pane.fade(id='chats' role='tabpanel' aria-labelledby='nav-chats' tabindex='0')
-              //- include pug_sections/contacts.pug
-            div.tab-pane.fade(id='profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
+          div.tab-pane.fade(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats' tabindex='0')
+            p 121213
+          div.tab-pane.fade(id='nav-profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
+            p 121213efefef
 
-        div.pg-y-3rem.px-4.contacts
-          include pug_sections/contacts.pug
+        
 
         
 
@@ -50,7 +54,7 @@ body
           
   
       
-      section.col-md-8.visibility-chat.d-flex.justify-content-center.align-items-center.px-0
+      section.col-md-8.justify-content-center.align-items-center.px-0.d-none.d-md-flex
         include ./pug_sections/avatar.pug
         
 

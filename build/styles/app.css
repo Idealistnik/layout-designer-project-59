@@ -18327,6 +18327,10 @@ textarea.form-control-lg {
   color: inherit;
 }
 
-.link-contacts:hover {
+.focus:hover {
+  background-color: #4545A5;
+}
+
+.color {
   background-color: #4545A5;
 }

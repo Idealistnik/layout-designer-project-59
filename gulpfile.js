@@ -41,6 +41,12 @@ const watchers = () => {
   }, buildSass);
 }
 
+const copyFile = () => {
+  return src('app/images/**/*')
+    .pipe(dest('build/images'));
+};
+
+exports.copy = copyFile;
 exports.watchers = watchers;
 // exports.server = browserSyncJob;
-exports.build = parallel(buildSass, buildPug);
+exports.build = parallel(buildSass, buildPug, copyFile);
