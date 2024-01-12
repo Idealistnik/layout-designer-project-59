@@ -33,6 +33,21 @@
     position: sticky !important;
     bottom: 0 !important;
   }
+  .card.no-pg {
+    padding: 0 !important;
+  }
+  .mg-t-64 {
+    margin-top: 64px;
+  }
+  .card-img {
+    margin-bottom: 8px;
+  }
+  .card-title.mb-16 {
+    margin-bottom: 16px !important;
+  }
+  .pg-left-14 {
+    padding-left: 14.6px !important;
+  }
 }
 .rounded-left-top {
   border-top-left-radius: 1rem;
@@ -61,6 +76,16 @@
 
 .no-border {
   border: none !important;
+}
+
+.profile {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.profile::-webkit-scrollbar {
+  display: none;
 }
 
 .align-baseline {

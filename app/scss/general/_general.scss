@@ -1,16 +1,3 @@
-// @include media-breakpoint-up(md) {
-//   .mobile {
-//     padding: 0!important;
-//   }
-// }
-
-// @media (width <=600px) {
-//   .mobile {
-//     padding: 0!important;
-//   }
-// }
-
-
 @include media-breakpoint-down(sm) {
     .container-new-xxl.p-4 {
       padding: 0 !important;
@@ -56,7 +43,27 @@
       position: sticky !important;
       bottom: 0 !important;
     }
-  
+
+    // для profile
+    .card.no-pg {
+      padding: 0 !important;
+    }
+
+    .mg-t-64 {
+      margin-top: 64px;
+    }
+
+    .card-img {
+      margin-bottom: 8px;
+    }
+    .card-title.mb-16 {
+      margin-bottom: 16px !important;
+    }
+    .pg-left-14 {
+      padding-left: 14.6px !important;
+    }
+
+
   }
   
   
@@ -87,5 +94,8 @@
 
   .no-border {
     border: none !important;
+  }
 
+  .profile {
+    @include hide-scrollbar();
   }
