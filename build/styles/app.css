@@ -52,6 +52,17 @@
   background-color: #4545A5;
 }
 
+.card-img {
+  width: 90px !important;
+  height: 90px;
+  text-align: center !important;
+  border-radius: 50rem !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }

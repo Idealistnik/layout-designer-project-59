@@ -77,3 +77,15 @@
   .color {
     background-color: $primary;
     }
+
+  .card-img {
+    width: 90px !important;
+    height: 90px;
+    text-align: center !important;
+    border-radius: $border-radius-pill !important;
+  }
+
+  .no-border {
+    border: none !important;
+
+  }
