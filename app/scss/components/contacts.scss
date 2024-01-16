@@ -3,14 +3,10 @@
   @include hide-scrollbar();
 }
 
-// .contacts-list p:first-of-type {
-//   margin-top: 0;
-// }
-
 .link-contacts {
   color: inherit;
 }
 
-.focus:hover {
+.focus-contacts:hover {
   background-color: $primary; 
 }

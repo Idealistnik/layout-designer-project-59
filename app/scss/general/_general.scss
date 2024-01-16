@@ -1,7 +1,7 @@
 @include media-breakpoint-down(sm) {
-    .container-new-xxl.p-4 {
-      padding: 0 !important;
-    }
+    // .container-new-xxl.p-4 {
+    //   padding: 0 !important;
+    // }
   
     .text-hidden {
       font-size: 0 !important;
@@ -34,15 +34,11 @@
       margin-right: 24px !important;
     }
   
-    .row.rounded-4,
-    .rounded-left-top {
-      border-radius: 0 !important;
-    }
     // не работает
-    header {
-      position: sticky !important;
-      bottom: 0 !important;
-    }
+    // header {
+    //   position: sticky !important;
+    //   bottom: 0 !important;
+    // }
 
     // для profile
     .card.no-pg {
@@ -62,13 +58,13 @@
     .pg-left-14 {
       padding-left: 14.6px !important;
     }
+    .header {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
 
 
-  }
-  
-  
-  .rounded-left-top {
-    @include border-top-start-radius(1rem);
   }
   
   .avatar-white {
@@ -99,3 +95,6 @@
   .profile {
     @include hide-scrollbar();
   }
+
+
+ 

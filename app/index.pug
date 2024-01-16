@@ -10,14 +10,14 @@ head
   script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
  
 body.h-100
-  div.container-new-xxl.min-vh-100.bg-gray.p-4.h-100
-    div.row.m-0.bg-white.rounded-4.h-100
-      section.col-md-4.border-end.border-gray.px-0.h-100.overflow-hidden
+  div.container-new-xxl.min-vh-100.bg-gray.p-0.pg-sm-24px.h-100
+    div.row.m-0.bg-white.h-100.radius-sm-1rem
+      section.col-lg-4.border-end.border-gray.px-0.h-100.overflow-hidden
         
        
 
         div.tab-content(id='nav-tabContent')
-          header.bg-primary.rounded-left-top
+          header.bg-primary.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.header
             nav             
               div.nav.nav-tabs(id='nav-tab' role='tablist').align-items-center.p-3
                 a.me-3.m-r-auto
@@ -54,7 +54,7 @@ body.h-100
           
   
       
-      section.col-md-8.justify-content-center.align-items-center.px-0.d-none.d-md-flex
+      section.col-lg-8.justify-content-center.align-items-center.px-0.d-none.d-lg-flex
         include ./pug_sections/avatar.pug
         
 

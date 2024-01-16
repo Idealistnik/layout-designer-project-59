@@ -10,8 +10,9 @@
     color: inherit;
 }
 
-.focus:hover {
-background-color: $primary; 
+.focus-chats:hover {
+outline: 1px dotted $primary;
+outline-offset: 20px; 
 }
 
 .overflow {
