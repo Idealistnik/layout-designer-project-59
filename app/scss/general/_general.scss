@@ -98,3 +98,13 @@
 
 
  
+
+
+.cursor-text {
+  top: 26%;
+  right: 35%;
+}
+
+.current-chat {
+  @include hide-scrollbar();
+}

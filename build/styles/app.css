@@ -78,6 +78,21 @@
   display: none;
 }
 
+.cursor-text {
+  top: 26%;
+  right: 35%;
+}
+
+.current-chat {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.current-chat::-webkit-scrollbar {
+  display: none;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
