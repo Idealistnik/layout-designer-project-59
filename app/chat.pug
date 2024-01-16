@@ -27,7 +27,7 @@ body.h-100
                   img(src='./images/people.svg' width=25 height=25 alt='').me-2.avatar-white
                   small.text-hidden Контактыыы         
                   
-                a.nav-link.p-0.link-light.active.color(id='#chats' href='#chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='true').border.border-0.me-4.ms-2.my-2
+                a.nav-link.p-0.link-light.active.color(id='#current-chat' href='#chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='true').border.border-0.me-4.ms-2.my-2
                   img(src='./images/chat.svg' width=25 height=25 alt='').me-2.avatar-white
                   small.text-hidden Сообщения              
                 
@@ -42,18 +42,12 @@ body.h-100
             div.pg-y-3rem.px-4.chats.h-100
               include pug_sections/chats.pug 
           div.tab-pane.fade(id='nav-profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
-            div.pg-y-3rem.px-4.profile
+            div.pg-y-3rem.px-4.profile.h-100
               include pug_sections/profile.pug 
 
         
 
-        
 
-        
-       
-          
-  
-      
       section.col-lg-8.px-0
         div.current-chat.h-100
           include ./pug_sections/current_chat.pug
