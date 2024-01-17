@@ -46,6 +46,11 @@
   .pg-left-14 {
     padding-left: 14.6px !important;
   }
+  .header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
 .fs-12 {
   font-size: 12.8px;

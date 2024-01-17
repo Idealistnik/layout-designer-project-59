@@ -26,3 +26,8 @@ conv-s:
 
 ss:
 	code .
+	
+com:
+	git add .
+	git commit -m 'fix'
+	git push
