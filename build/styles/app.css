@@ -46,11 +46,6 @@
   .pg-left-14 {
     padding-left: 14.6px !important;
   }
-  .header {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
 }
 .fs-12 {
   font-size: 12.8px;
@@ -19142,8 +19137,7 @@ textarea.form-control-lg {
 }
 
 .focus-chats:hover {
-  outline: 1px dotted #4545A5;
-  outline-offset: 20px;
+  background-color: #4545A5;
 }
 
 .overflow {

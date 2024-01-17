@@ -11,8 +11,7 @@
 }
 
 .focus-chats:hover {
-outline: 1px dotted $primary;
-outline-offset: 20px; 
+    background-color: $primary; 
 }
 
 .overflow {

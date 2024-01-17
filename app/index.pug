@@ -1,9 +1,8 @@
-DOCTYPE(html)
+doctype html
 html(lang='ru').h-100
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-
     title layout-designer-project-56
     link(rel='stylesheet' href='./styles/app.css')
     link(rel='stylesheet' href='../node_modules/bootstrap/scss/bootstrap')
@@ -14,8 +13,6 @@ html(lang='ru').h-100
       div.row.m-0.bg-white.h-100.radius-sm-1rem
         section.col-lg-4.border-end.px-0.h-100.overflow-hidden
           
-        
-
           div.tab-content(id='nav-tabContent')
             header.bg-primary.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.header
               nav             
@@ -35,14 +32,14 @@ html(lang='ru').h-100
                     img(src='./images/person.svg' width=25 height=25 alt='').me-sm-2.svg-white
                     small.d-none.d-sm-inline Профиль 
             div.tab-pane.fade.show.active(id='nav-contacts' role='tabpanel' aria-labelledby='nav-contacts' tabindex='0')
-              div.pg-y-3rem.px-4.contacts.h-100
+              div.py-5.px-4.contacts.h-100
                 include pug_sections/contacts.pug            
 
             div.tab-pane.fade(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats' tabindex='0')
-              div.pg-y-3rem.px-4.chats.h-100
+              div.py-5.px-4.chats.h-100
                 include pug_sections/chats.pug 
             div.tab-pane.fade(id='nav-profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
-              div.pg-y-3rem.px-4.profile.h-100
+              div.py-5.px-4.profile.h-100
                 include pug_sections/profile.pug
 
         section.col-lg-8.justify-content-center.align-items-center.px-0.d-none.d-lg-flex

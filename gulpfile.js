@@ -27,9 +27,10 @@ const buildPug = () => {
   console.log('Компиляция Pug');
 
   return src('app/*.pug')
-    .pipe(pug({pretty: true}))    
+    .pipe(pug({pretty: true}))   
     .pipe(dest('build/'))
     // .pipe(browserSync.stream());
+    
 }
 
 const watchers = () => {
