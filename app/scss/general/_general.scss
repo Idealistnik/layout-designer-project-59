@@ -1,28 +1,15 @@
+.svg-white {
+  filter: invert(1);
+}
+
 @include media-breakpoint-down(sm) {
-    // .container-new-xxl.p-4 {
-    //   padding: 0 !important;
-    // }
-  
-    .text-hidden {
-      font-size: 0 !important;
-    }
-  
-    .imagin.logo-header {
+  // для шапки (табов)
+
+    img.logo-header {
       width: 15px;
       height: 25px;
       margin-left: 5px !important;
       margin-right: 0 !important;
-  
-    }
-  
-    a.m-r-auto {
-      margin-right: auto !important;
-    }
-  
-    .nav-link {
-      .avatar-white {
-        margin-right: 0 !important;
-      }
     }
   
     a.nav-link {
@@ -34,27 +21,22 @@
       margin-right: 24px !important;
     }
   
-    // не работает
-    // header {
-    //   position: sticky !important;
-    //   bottom: 0 !important;
-    // }
-
     // для profile
-    .card.no-pg {
-      padding: 0 !important;
-    }
+
+    // .card.no-pg {
+    //   padding: 0 !important;
+    // }
 
     .mg-t-64 {
       margin-top: 64px;
     }
 
-    .card-img {
-      margin-bottom: 8px;
-    }
-    .card-title.mb-16 {
-      margin-bottom: 16px !important;
-    }
+    // .card-img {
+    //   margin-bottom: 8px;
+    // }
+    // .card-title.mb-16 {
+    //   margin-bottom: 16px !important;
+    // }
     .pg-left-14 {
       padding-left: 14.6px !important;
     }
@@ -64,12 +46,9 @@
       width: 100%;
     }
 
-
   }
   
-  .avatar-white {
-    filter: invert(1);
-  }
+  
   
   .nav-link:focus,
   .nav-link:hover {
@@ -97,14 +76,3 @@
   }
 
 
- 
-
-
-.cursor-text {
-  top: 26%;
-  right: 35%;
-}
-
-.current-chat {
-  @include hide-scrollbar();
-}

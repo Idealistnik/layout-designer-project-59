@@ -1,18 +1,13 @@
 @charset "UTF-8";
+.svg-white {
+  filter: invert(1);
+}
+
 @media (max-width: 575.98px) {
-  .text-hidden {
-    font-size: 0 !important;
-  }
-  .imagin.logo-header {
+  img.logo-header {
     width: 15px;
     height: 25px;
     margin-left: 5px !important;
-    margin-right: 0 !important;
-  }
-  a.m-r-auto {
-    margin-right: auto !important;
-  }
-  .nav-link .avatar-white {
     margin-right: 0 !important;
   }
   a.nav-link {
@@ -22,17 +17,8 @@
   a.nav-link:last-of-type {
     margin-right: 24px !important;
   }
-  .card.no-pg {
-    padding: 0 !important;
-  }
   .mg-t-64 {
     margin-top: 64px;
-  }
-  .card-img {
-    margin-bottom: 8px;
-  }
-  .card-title.mb-16 {
-    margin-bottom: 16px !important;
   }
   .pg-left-14 {
     padding-left: 14.6px !important;
@@ -43,10 +29,6 @@
     width: 100%;
   }
 }
-.avatar-white {
-  filter: invert(1);
-}
-
 .nav-link:focus,
 .nav-link:hover {
   border-color: #4545A5 !important;
@@ -75,21 +57,6 @@
   overflow-x: hidden;
 }
 .profile::-webkit-scrollbar {
-  display: none;
-}
-
-.cursor-text {
-  top: 26%;
-  right: 35%;
-}
-
-.current-chat {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.current-chat::-webkit-scrollbar {
   display: none;
 }
 
@@ -19171,4 +19138,19 @@ textarea.form-control-lg {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.cursor-text {
+  top: 26%;
+  right: 35%;
+}
+
+.current-chat {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.current-chat::-webkit-scrollbar {
+  display: none;
 }
