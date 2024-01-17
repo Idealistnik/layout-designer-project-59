@@ -3,6 +3,29 @@
   filter: invert(1);
 }
 
+.nav-link:focus,
+.nav-link:hover {
+  border-color: #4545A5 !important;
+  background-color: #4545A5 !important;
+}
+
+.card-img {
+  width: 90px !important;
+  height: 90px;
+  text-align: center !important;
+  border-radius: 50rem !important;
+}
+
+.profile {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.profile::-webkit-scrollbar {
+  display: none;
+}
+
 @media (max-width: 575.98px) {
   img.logo-header {
     width: 15px;
@@ -29,37 +52,6 @@
     width: 100%;
   }
 }
-.nav-link:focus,
-.nav-link:hover {
-  border-color: #4545A5 !important;
-  background-color: #4545A5 !important;
-}
-
-.color {
-  background-color: #4545A5;
-}
-
-.card-img {
-  width: 90px !important;
-  height: 90px;
-  text-align: center !important;
-  border-radius: 50rem !important;
-}
-
-.no-border {
-  border: none !important;
-}
-
-.profile {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.profile::-webkit-scrollbar {
-  display: none;
-}
-
 .align-baseline {
   vertical-align: baseline !important;
 }

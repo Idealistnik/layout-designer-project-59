@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>layout-designer-project-56</title>
+  <title>layout-designer-project-59</title>
   <link rel="stylesheet" href="./styles/app.css"/>
   <link rel="stylesheet" href="../node_modules/bootstrap/scss/bootstrap"/>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -12,13 +12,63 @@
 <body class="h-100">
   <div class="container-new-xxl min-vh-100 bg-gray p-0 p-sm-4 h-100">
     <div class="row m-0 bg-white h-100 radius-sm-1rem">
-      <section class="col-lg-4 border-end border-gray px-0 h-100 overflow-hidden">
+      <section class="col-lg-4 border-end px-0 h-100 overflow-hidden">
         <div class="tab-content" id="nav-tabContent">
           <header class="bg-primary radius-left-top-sm-1rem radius-right-top-sm-1rem radius-right-top-lg-0 header">
             <nav>            
-              <div class="nav nav-tabs align-items-center p-3" id="nav-tab" role="tablist"><a class="me-3 m-r-auto"><img class="avatar-white me-1 logo-header imagin" src="./images/logo.svg" width="25" height="40" alt=""/></a><a class="nav-link p-0 link-light color border border-0 me-4 ms-2 my-2" id="#contacts" href="#contacts" data-bs-toggle="tab" data-bs-target="#nav-contacts" type="button" role="tab" aria-controls="nav-contacts" aria-selected="false"><img class="me-2 avatar-white" src="./images/people.svg" width="25" height="25" alt=""/><small class="d-none d-sm-inline">Контактыыы         </small></a><a class="nav-link p-0 link-light active color border border-0 me-4 ms-2 my-2" id="#current-chat" href="#chats" data-bs-toggle="tab" data-bs-target="#nav-chats" type="button" role="tab" aria-controls="nav-chats" aria-selected="true"><img class="me-2 avatar-white" src="./images/chat.svg" width="25" height="25" alt=""/><small class="d-none d-sm-inline">Сообщения              </small></a><a class="nav-link p-0 link-light color border border-0 ms-2 my-2" id="#profile" href="#profile" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="me-2 avatar-white" src="./images/person.svg" width="25" height="25" alt=""/><small class="d-none d-sm-inline">Профиль </small></a></div>
+              <div class="nav nav-tabs align-items-center p-3" id="nav-tab" role="tablist"><a class="me-sm-3 me-auto"><img class="svg-white me-1 logo-header" src="./images/logo.svg" width="25" height="40" alt=""/></a><a class="nav-link p-0 link-light d-sm-none border border-0 me-4 ms-2 my-2" id="#current-chat" href="#current-chat" data-bs-toggle="tab" data-bs-target="#nav-current-chat" type="button" role="tab" aria-controls="nav-current-chat" aria-selected="false"><img class="me-sm-2" src="./images/chat-left-text_1.svg" width="25" height="25" alt=""/></a><a class="nav-link p-0 link-light border border-0 me-4 ms-2 my-2" id="#contacts" href="#contacts" data-bs-toggle="tab" data-bs-target="#nav-contacts" type="button" role="tab" aria-controls="nav-contacts" aria-selected="false"><img class="me-sm-2 svg-white" src="./images/people.svg" width="25" height="25" alt=""/><small class="d-none d-sm-inline">Контакты         </small></a><a class="nav-link p-0 link-light active border border-0 me-4 ms-2 my-2" id="#current-chat" href="#current-chat" data-bs-toggle="tab" data-bs-target="#nav-chats" type="button" role="tab" aria-controls="nav-chats" aria-selected="true"><img class="me-sm-2 svg-white" src="./images/chat.svg" width="25" height="25" alt=""/><small class="d-none d-sm-inline">Сообщения              </small></a><a class="nav-link p-0 link-light border border-0 ms-2 my-2" id="#profile" href="#profile" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="me-sm-2 svg-white" src="./images/person.svg" width="25" height="25" alt=""/><small class="d-none d-sm-inline">Профиль </small></a></div>
             </nav>
           </header>
+          <div class="tab-pane fade" id="nav-current-chat" role="tabpanel" aria-labelledby="nav-current-chat" tabindex="0">
+            <div class="pg-y-3rem px-4 contacts h-100">
+              <div class="d-flex border-bottom me-4 position-sticky top-0 bg-white"><img class="rounded-circle ms-3 me-4 align-self-center" width="50" height="50" src="./images/avatar_4.jpg"/>
+                <div class="py-4 d-flex flex-column"><span class="text-dark fw-bold">Вениамин Редакторович</span><small class="text-secondary">Онлайн</small></div>
+              </div>
+              <div class="d-flex flex-column gap-3 p-5">
+                <div class="col-9">
+                  <div class="d-flex gap-3"><img class="rounded-circle align-self-end" width="50" height="50" src="./images/avatar_4.jpg"/>
+                    <div class="p-4 shadow-sm radius-1rem bg-light">
+                      <div class="pb-2 border-bottom"><span class="text-dark fw-bold d-block">Вениамин Редакторович</span><span class="text-secondary">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</span></div><small class="d-block text-secondary mt-1">8 минут назад</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 align-self-end">
+                  <div class="d-flex gap-3 align-self-end"><img class="rounded-circle align-self-end" width="50" height="50" src="./images/avatar_1.jpg"/>
+                    <div class="p-4 shadow-sm radius-1rem bg-primary">
+                      <div class="pb-2 border-bottom"><span class="text-light">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</span></div><small class="d-block text-white opacity-50 mt-1">8 минут назад</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="d-flex gap-3"><img class="rounded-circle align-self-end" width="50" height="50" src="./images/avatar_4.jpg"/>
+                    <div class="p-4 shadow-sm radius-1rem bg-light">
+                      <div class="pb-2 border-bottom"><span class="text-dark fw-bold d-block">Вениамин Редакторович</span><span class="text-secondary">Лады</span></div><small class="d-block text-secondary mt-1">5 минут назад</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 align-self-end">
+                  <div class="d-flex gap-3 align-self-end"><img class="rounded-circle align-self-end" width="50" height="50" src="./images/avatar_1.jpg"/>
+                    <div class="p-4 shadow-sm radius-1rem bg-primary">
+                      <div class="pb-2 border-bottom"><span class="text-light">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</span></div><small class="d-block text-white opacity-50 mt-1">3 минуты назад</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="d-flex gap-3"><img class="rounded-circle align-self-end" width="50" height="50" src="./images/avatar_4.jpg"/>
+                    <div class="p-4 shadow-sm radius-1rem bg-light">
+                      <div class="pb-2 border-bottom"><span class="text-dark fw-bold d-block">Вениамин Редакторович</span><span class="text-secondary">о_О</span></div><small class="d-block text-secondary mt-1">Только что</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-5 position-sticky bottom-0 bg-white">
+                <div class="input-group border-top-lg pe-4 py-3"> 
+                  <input class="form-control border-0 shadow-none text-secondary py-3 ps-4" type="text" id="chats-text" aria-label="chats-text" placeholder="Напишите сообщение..." aria-describedby="button-addon2"/>
+                  <button class="btn border-0 shadow-none" type="button" id="button-addon2"><img class="position-relative" width="50" height="50" src="./images/Ellipse_2.svg"/><img class="position-absolute cursor-text text-white" width="24" height="24" src="./images/cursor_2.svg"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="tab-pane fade" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts" tabindex="0">
             <div class="pg-y-3rem px-4 contacts h-100">
               <section class="contacts h-100">
@@ -100,7 +150,7 @@
                   <label class="form-label visually-hidden" for="contacts-search">Поиск по сообщениям</label>
                   <input class="form-control border-0 border-bottom rounded-0 text-secondary shadow-none px-4 py-4" type="search" id="profile-search" aria-label="profile-search" placeholder="Поиск по сообщениям"/>
                 </form>
-                <div class="card text-center no-border py-sm-4 mg-t-64"><img class="card-img align-self-center mt-3 mb-sm-0 mb-2" src="./images/avatar_1.jpg" alt="..." width="90" height="90"/>
+                <div class="card text-center border-0 py-sm-4 mg-t-64"><img class="card-img align-self-center mt-3 mb-sm-0 mb-2" src="./images/avatar_1.jpg" alt="..." width="90" height="90"/>
                   <div class="card-body pt-2">
                     <h5 class="card-title mb-sm-4 mb-3 fw-bold">Кодовёнок Хекслетович</h5>
                     <p class="card-text text-black-50">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
@@ -137,7 +187,7 @@
           </div>
         </div>
       </section>
-      <section class="col-lg-8 px-0">
+      <section class="col-lg-8 px-0 d-none d-lg-flex">
         <div class="current-chat h-100">
           <div class="d-flex border-bottom me-4 position-sticky top-0 bg-white"><img class="rounded-circle ms-3 me-4 align-self-center" width="50" height="50" src="./images/avatar_4.jpg"/>
             <div class="py-4 d-flex flex-column"><span class="text-dark fw-bold">Вениамин Редакторович</span><small class="text-secondary">Онлайн</small></div>

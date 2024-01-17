@@ -1,7 +1,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 
-@import "_custom_variables";
+@import "custom_variables";
 
 // Подключаем базовые функции, переменные и миксины
 
@@ -9,7 +9,7 @@
 @import "../../node_modules/bootstrap/scss/variables-dark";
 
 @import "./utilities/custom_theme_colors";
-@import "./utilities/_custom_breakpoint";
+@import "./utilities/custom_breakpoint";
 
 
 @import "../../node_modules/bootstrap/scss/maps";
@@ -19,8 +19,8 @@
 
 // Подключаем файл с нашими утилитами
 
-@import "./utilities/_custom_utilities";
-@import "./general/_general";
+@import "./utilities/custom_utilities";
+@import "./general/general";
 
 // Подключаем генерацию утилит
 

@@ -2,6 +2,24 @@
   filter: invert(1);
 }
 
+.nav-link:focus,
+.nav-link:hover {
+  border-color: $primary !important;
+  background-color: $primary !important;
+}
+
+.card-img {
+  width: 90px !important;
+  height: 90px;
+  text-align: center !important;
+  border-radius: $border-radius-pill !important;
+}
+
+// Для профайла
+.profile {
+  @include hide-scrollbar();
+}
+
 @include media-breakpoint-down(sm) {
   // для шапки (табов)
 
@@ -23,20 +41,10 @@
   
     // для profile
 
-    // .card.no-pg {
-    //   padding: 0 !important;
-    // }
-
     .mg-t-64 {
       margin-top: 64px;
     }
 
-    // .card-img {
-    //   margin-bottom: 8px;
-    // }
-    // .card-title.mb-16 {
-    //   margin-bottom: 16px !important;
-    // }
     .pg-left-14 {
       padding-left: 14.6px !important;
     }
@@ -50,29 +58,5 @@
   
   
   
-  .nav-link:focus,
-  .nav-link:hover {
-    border-color: $primary !important;
-    background-color: $primary !important;
-  }
-  
-  .color {
-    background-color: $primary;
-    }
-
-  .card-img {
-    width: 90px !important;
-    height: 90px;
-    text-align: center !important;
-    border-radius: $border-radius-pill !important;
-  }
-
-  .no-border {
-    border: none !important;
-  }
-
-  .profile {
-    @include hide-scrollbar();
-  }
-
+ 
 

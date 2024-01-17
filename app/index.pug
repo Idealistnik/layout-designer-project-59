@@ -12,7 +12,7 @@ head
 body.h-100
   div.container-new-xxl.min-vh-100.bg-gray.p-0.p-sm-4.h-100
     div.row.m-0.bg-white.h-100.radius-sm-1rem
-      section.col-lg-4.border-end.border-gray.px-0.h-100.overflow-hidden
+      section.col-lg-4.border-end.px-0.h-100.overflow-hidden
         
        
 
@@ -23,15 +23,15 @@ body.h-100
                 a.me-sm-3.me-auto
                   img(src='./images/logo.svg' width=25 height=40 alt='').svg-white.me-1.logo-header
                 
-                a.nav-link.p-0.link-light.active.color(id='#contacts' href='#contacts' data-bs-toggle='tab' data-bs-target='#nav-contacts' type='button' role='tab' aria-controls='nav-contacts' aria-selected='true').border.border-0.me-4.ms-2.my-2
+                a.nav-link.p-0.link-light.active(id='contacts' href='#contacts' data-bs-toggle='tab' data-bs-target='#nav-contacts' type='button' role='tab' aria-controls='nav-contacts' aria-selected='true').border.border-0.me-4.ms-2.my-2
                   img(src='./images/people.svg' width=25 height=25 alt='').me-sm-2.svg-white
                   small.d-none.d-sm-inline Контакты         
                   
-                a.nav-link.p-0.link-light.color(id='#chats' href='#chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='false').border.border-0.me-4.ms-2.my-2
+                a.nav-link.p-0.link-light(id='chats' href='#chats' data-bs-toggle='tab' data-bs-target='#nav-chats' type='button' role='tab' aria-controls='nav-chats' aria-selected='false').border.border-0.me-4.ms-2.my-2
                   img(src='./images/chat.svg' width=25 height=25 alt='').me-sm-2.svg-white
                   small.d-none.d-sm-inline Сообщения              
                   
-                a.nav-link.p-0.link-light.color(id='#profile' href='#profile' data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false').border.border-0.ms-2.my-2
+                a.nav-link.p-0.link-light(id='profile' href='#profile' data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false').border.border-0.ms-2.my-2
                   img(src='./images/person.svg' width=25 height=25 alt='').me-sm-2.svg-white
                   small.d-none.d-sm-inline Профиль 
           div.tab-pane.fade.show.active(id='nav-contacts' role='tabpanel' aria-labelledby='nav-contacts' tabindex='0')
@@ -43,17 +43,8 @@ body.h-100
               include pug_sections/chats.pug 
           div.tab-pane.fade(id='nav-profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
             div.pg-y-3rem.px-4.profile.h-100
-              include pug_sections/profile.pug 
+              include pug_sections/profile.pug
 
-        
-
-        
-
-        
-       
-          
-  
-      
       section.col-lg-8.justify-content-center.align-items-center.px-0.d-none.d-lg-flex
         include ./pug_sections/avatar.pug
         
