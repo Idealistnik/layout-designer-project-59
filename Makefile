@@ -6,17 +6,23 @@ lint:
 	npx stylelint ./app/scss/**/*.scss
 	npx htmlhint ./build/**/*.html
 
+bint:
+	npx pug-lint ./app/pug_sections/profile.pug
+
 deploy:
 	npx surge ./build
 
 build-file:
 	npx gulp build
 
+build-Pug:
+	npx gulp buildPug
+
 server:
 	npx gulp server
 
 watchers:
-	npx gulp watchers
+	npx gulp watch
 
 conv:
 	npx pug ./app/pages/index.pug --pretty -w -o ./build/index.html

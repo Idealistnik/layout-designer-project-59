@@ -48,6 +48,7 @@ const copyFile = () => {
 };
 
 exports.copy = copyFile;
-exports.watchers = watchers;
+exports.watch = watchers;
+exports.buildPug = buildPug;
 // exports.server = browserSyncJob;
 exports.build = parallel(buildSass, buildPug, copyFile);
