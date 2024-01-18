@@ -13,7 +13,7 @@ html(lang='ru').h-100
       div.row.m-0.bg-white.h-100.radius-sm-1rem
         section.col-lg-4.border-end.px-0.h-100.overflow-hidden
           
-          div.tab-content(id='nav-tabContent').d-flex.flex-column
+          div.tab-content(id='nav-tabContent').d-flex.flex-column.h-100
             header.bg-primary.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.order-1.order-sm-0
               nav             
                 div.nav.nav-tabs(id='nav-tab' role='tablist').align-items-center.p-3
@@ -36,19 +36,19 @@ html(lang='ru').h-100
                     img(src='./images/person.svg' width=25 height=25 alt='').me-sm-2.svg-white
                     small.d-none.d-sm-inline Профиль 
             
-            div.tab-pane.fade(id='nav-current-chat' role='tabpanel' aria-labelledby='nav-current-chat' tabindex='0')
-              div.pg-y-3rem.px-4.current-chat.h-100
+            div.tab-pane.fade.flex-grow-1.h-100.overflow-hidden(id='nav-current-chat' role='tabpanel' aria-labelledby='nav-current-chat' tabindex='0')
+              div.current-chat.h-100
                 include pug_sections/current_chat.pug 
 
-            div.tab-pane.fade(id='nav-contacts' role='tabpanel' aria-labelledby='nav-contacts' tabindex='0')
+            div.tab-pane.fade.flex-grow-1.h-100.overflow-hidden(id='nav-contacts' role='tabpanel' aria-labelledby='nav-contacts' tabindex='0')
               div.py-5.px-4.contacts.h-100
                 include pug_sections/contacts.pug            
 
-            div.tab-pane.fade.show.active(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats' tabindex='0')
+            div.tab-pane.fade.show.active.flex-grow-1.h-100.overflow-hidden(id='nav-chats' role='tabpanel' aria-labelledby='nav-chats' tabindex='0')
               div.py-5.px-4.chats.h-100
                 include pug_sections/chats.pug 
 
-            div.tab-pane.fade(id='nav-profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
+            div.tab-pane.fade.flex-grow-1.h-100.overflow-hidden(id='nav-profile' role='tabpanel' aria-labelledby='nav-profile' tabindex='0')
               div.py-5.px-4.profile.h-100
                 include pug_sections/profile.pug
 
