@@ -19148,11 +19148,6 @@ textarea.form-control-lg {
   text-overflow: ellipsis;
 }
 
-.cursor-text {
-  top: 26%;
-  right: 21%;
-}
-
 .current-chat {
   -ms-overflow-style: none;
   scrollbar-width: none;
