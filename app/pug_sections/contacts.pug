@@ -42,7 +42,7 @@ section.contacts.h-100
     input(type='search' id='contacts-search'  aria-label='contacts-search' placeholder='Поиск по контактам').form-control.border-0.border-bottom.rounded-0.text-secondary.shadow-none.px-4.py-4
   div.contacts-list  
     each user_info, letter in contacts
-      p.text-muted.mt-5= letter  
+      p.text-secondary.mt-5= letter  
       each user in user_info
         div.shadow-sm.mb-3
           a(href='#').link-contacts.focus-contacts.link-underline.link-underline-opacity-0.d-flex                 

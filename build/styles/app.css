@@ -19123,6 +19123,10 @@ textarea.form-control-lg {
   background-color: #4545A5;
 }
 
+.focus-contacts:hover {
+  background-color: #4545A5;
+}
+
 .chats {
   -ms-overflow-style: none;
   scrollbar-width: none;
