@@ -7,7 +7,7 @@ lint:
 	npx htmlhint ./build/**/*.html
 
 bint:
-	npx pug-lint ./app/pug_sections/profile.pug
+	npx pug-lint ./app/chat.pug
 
 deploy:
 	npx surge ./build

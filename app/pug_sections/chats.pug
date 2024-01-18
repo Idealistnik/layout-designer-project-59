@@ -1,13 +1,13 @@
 section.h-100
   h2.fw-bold.mb-4 Чаты
-  form.mb-5
-    label(for='chats-search').form-label.visually-hidden Поиск по сообщениям
-    input(type='search' id='chats-search'  aria-label='chats-search' placeholder='Поиск по сообщениям').form-control.border-0.border-bottom.rounded-0.text-secondary.shadow-none.px-4.py-4
+  form.mb-5(action='mailto:nikitapavlov2015@gmail.com')
+    label.form-label.visually-hidden(for='chats-search') Поиск по сообщениям
+    input.form-control.border-0.border-bottom.rounded-0.text-secondary.shadow-none.px-4.py-4(type='search', id='chats-search', aria-label='chats-search', placeholder='Поиск по сообщениям')
   div
     div.shadow-sm.mb-3
-      a(href='chat.html').link-chats.focus-chats.link-underline.link-underline-opacity-0.d-flex                 
+      a.link-chats.focus-chats.link-underline.link-underline-opacity-0.d-flex(href='chat.html')               
         div.d-flex.align-items-center.w-100
-          img(width=50 height=50 src='./images/avatar_4.jpg').rounded-circle.ms-3.me-4
+          img.rounded-circle.ms-3.me-4(width=50, height=50, src='./images/avatar_4.jpg', alt='Aватарка')
           div.py-4.flex-grow-1.me-4.overflow
             div.fw-bold.d-flex.justify-content-between
               span Вениамин Редакторович
@@ -15,9 +15,9 @@ section.h-100
             small.text-secondary o_O
     
     div.shadow-sm.mb-3
-      a(href='chat.html').link-chats.focus-chats.link-underline.link-underline-opacity-0.d-flex                 
+      a.link-chats.focus-chats.link-underline.link-underline-opacity-0.d-flex(href='chat.html')                
         div.d-flex.align-items-center.w-100
-          img(width=50 height=50 src='./images/avatar_2.jpg').rounded-circle.ms-3.me-4
+          img.rounded-circle.ms-3.me-4(width=50, height=50, src='./images/avatar_2.jpg', alt='Aватарка')
           div.py-4.flex-grow-1.me-4.overflow
             div.fw-bold.d-flex.justify-content-between
               span Джедай Падаванов
@@ -25,12 +25,12 @@ section.h-100
             small.text-secondary Привет, скоро третий проект? Уже скоро надо будет выложить
     
     div.shadow-sm.mb-3
-      a(href='chat.html').link-chats.focus-chats.link-underline.link-underline-opacity-0.d-flex                 
+      a.link-chats.focus-chats.link-underline.link-underline-opacity-0.d-flex(href='chat.html')               
         div.d-flex.align-items-center.w-100
-          img(width=50 height=50 src='./images/avatar_3.jpg').rounded-circle.ms-3.me-4
+          img.rounded-circle.ms-3.me-4(width=50, height=50, src='./images/avatar_3.jpg', alt='Aватарка')
           div.py-4.flex-grow-1.me-4.overflow
             div.fw-bold.d-flex.justify-content-between
               span Алексей Примадонин
               small.time.fw-normal.me-3 08:53
-            small.text-secondary Тесты упали >_<
-            
+            small.text-secondary Тесты упали &gt;_&lt;
+             
