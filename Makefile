@@ -6,8 +6,8 @@ lint:
 	npx stylelint ./app/scss/**/*.scss
 	npx htmlhint ./build/**/*.html
 
-bint:
-	npx pug-lint ./app/chat.pug
+# bint:
+# 	npx pug-lint ./app/chat.pug
 
 deploy:
 	npx surge ./build
