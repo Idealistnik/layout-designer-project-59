@@ -42,7 +42,7 @@ $utilities: map-merge(
   $utilities,
   (
     "border":
-     map-merge(
+    map-merge(
       map-get($utilities, "border"),
       (
         responsive: true,
@@ -53,7 +53,7 @@ $utilities: map-merge(
       ),
     ),
     "border-top":
-     map-merge(
+    map-merge(
       map-get($utilities, "border-top"),
       (
         responsive: true,
@@ -64,7 +64,7 @@ $utilities: map-merge(
       ),
     ),
     "border-bottom":
-     map-merge(
+    map-merge(
       map-get($utilities, "border-bottom"),
       (
         responsive: true,
@@ -75,7 +75,7 @@ $utilities: map-merge(
       ),
     ),
     "border-start":
-     map-merge(
+    map-merge(
       map-get($utilities, "border-start"),
       (
         responsive: true,
@@ -86,7 +86,7 @@ $utilities: map-merge(
       ),
     ),
     "border-end":
-     map-merge(
+    map-merge(
       map-get($utilities, "border-end"),
       (
         responsive: true,
@@ -98,7 +98,7 @@ $utilities: map-merge(
     ),
   ),
 );
-    
+
 @mixin hide-scrollbar() {
   & {
     -ms-overflow-style: none;
