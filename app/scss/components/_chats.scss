@@ -1,21 +1,21 @@
 .chats {
-    @include hide-scrollbar;
-  }
+  @include hide-scrollbar;
+}
 
 .time {
-    color: $gray-500;
+  color: $gray-500;
 }
 
 .link-chats {
-    color: inherit;
+  color: inherit;
 }
 
 .focus-chats:hover {
-    background-color: $primary; 
+  background-color: $primary; 
 }
 
 .overflow {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
