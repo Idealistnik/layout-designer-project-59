@@ -10,9 +10,10 @@ html.h-100(lang='ru')
  
   body.h-100.bg-gray
     div.container-new-xxl.min-vh-100.p-0.p-sm-4.h-100
+      h1.visually-hidden Хекслет чат
       div.row.m-0.bg-white.h-100.radius-sm-1rem
         section.col-lg-4.border-end.px-0.h-100
-          
+          h2.visually-hidden Раздел навигации
           div.tab-content.d-flex.flex-column.h-100(id='nav-tab-content')
             header.bg-primary.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.order-1.order-sm-0
               nav             
@@ -21,15 +22,15 @@ html.h-100(lang='ru')
                   a.me-sm-3.me-auto
                     img.me-1.logo-header(src='./images/logo.svg', width=25, height=40, alt='Логотип Хекслет')
                   
-                  a.nav-link.p-0.link-light.active.bg-transparent.border.border-0.me-4.ms-2.my-2(id='contacts', href='#contacts', data-bs-toggle='tab', data-bs-target='#nav-contacts', type='button', role='tab', aria-controls='nav-contacts', aria-selected='true')
+                  a.nav-link.p-0.link-light.active.bg-transparent.border.border-0.me-4.ms-2.my-2(id='contacts', href='#contacts', data-bs-toggle='tab', data-bs-target='#nav-contacts', role='tab', aria-controls='nav-contacts', aria-selected='true')
                     img.me-sm-2.svg-white(src='./images/people.svg', width=25, height=25, alt='Иконка Контакты')
                     small.d-none.d-sm-inline Контакты         
                     
-                  a.nav-link.p-0.link-light.bg-transparent.border.border-0.me-4.ms-2.my-2(id='chats', href='#chats', data-bs-toggle='tab', data-bs-target='#nav-chats', type='button', role='tab', aria-controls='nav-chats', aria-selected='false')
+                  a.nav-link.p-0.link-light.bg-transparent.border.border-0.me-4.ms-2.my-2(id='chats', href='#chats', data-bs-toggle='tab', data-bs-target='#nav-chats', role='tab', aria-controls='nav-chats', aria-selected='false')
                     img.me-sm-2.svg-white(src='./images/chat.svg', width=25, height=25, alt='Иконка Сообщения')
                     small.d-none.d-sm-inline Сообщения              
                     
-                  a.nav-link.p-0.link-light.bg-transparent.border.border-0.ms-2.my-2(id='profile', href='#profile', data-bs-toggle='tab', data-bs-target='#nav-profile', type='button', role='tab', aria-controls='nav-profile', aria-selected='false')
+                  a.nav-link.p-0.link-light.bg-transparent.border.border-0.ms-2.my-2(id='profile', href='#profile', data-bs-toggle='tab', data-bs-target='#nav-profile', role='tab', aria-controls='nav-profile', aria-selected='false')
                     img.me-sm-2.svg-white(src='./images/person.svg', width=25, height=25, alt='Иконка Профиль')
                     small.d-none.d-sm-inline Профиль 
 
@@ -45,4 +46,5 @@ html.h-100(lang='ru')
                 include pug_sections/profile.pug
 
         section.col-lg-8.justify-content-center.align-items-center.px-0.d-none.d-lg-flex
+          h2.visually-hidden Раздел приветственного сообщения
           include ./pug_sections/avatar.pug
