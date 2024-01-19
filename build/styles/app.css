@@ -19,8 +19,7 @@
 .profile {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden auto;
 }
 .profile::-webkit-scrollbar {
   display: none;
@@ -45,26 +44,6 @@
     padding-left: 14.6px !important;
   }
 }
-.fs-12 {
-  font-size: 12.8px;
-}
-
-.pb-23 {
-  padding-bottom: 23px;
-}
-
-.pt-23 {
-  padding-top: 24px;
-}
-
-.pl-21 {
-  padding-left: 21px;
-}
-
-.pr-32 {
-  padding-right: 32px !important;
-}
-
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -2061,15 +2040,6 @@
   z-index: 3 !important;
 }
 
-.pg-top-3rem {
-  padding-top: 3rem !important;
-}
-
-.pg-y-3rem {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
-
 .radius-1rem {
   border-radius: 1rem !important;
 }
@@ -2675,13 +2645,6 @@
   .text-sm-center {
     text-align: center !important;
   }
-  .pg-top-sm-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-sm-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-sm-1rem {
     border-radius: 1rem !important;
   }
@@ -3281,13 +3244,6 @@
   }
   .text-md-center {
     text-align: center !important;
-  }
-  .pg-top-md-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-md-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
   }
   .radius-md-1rem {
     border-radius: 1rem !important;
@@ -3889,13 +3845,6 @@
   .text-lg-center {
     text-align: center !important;
   }
-  .pg-top-lg-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-lg-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-lg-1rem {
     border-radius: 1rem !important;
   }
@@ -4495,13 +4444,6 @@
   }
   .text-xl-center {
     text-align: center !important;
-  }
-  .pg-top-xl-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-xl-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
   }
   .radius-xl-1rem {
     border-radius: 1rem !important;
@@ -5103,13 +5045,6 @@
   .text-xxl-center {
     text-align: center !important;
   }
-  .pg-top-xxl-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-xxl-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-xxl-1rem {
     border-radius: 1rem !important;
   }
@@ -5710,13 +5645,6 @@
   .text-new-xxl-center {
     text-align: center !important;
   }
-  .pg-top-new-xxl-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-new-xxl-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-new-xxl-1rem {
     border-radius: 1rem !important;
   }
@@ -5861,7 +5789,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: Roboto, sans-serif;
+  --bs-font-sans-serif: roboto, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -15354,15 +15282,6 @@ textarea.form-control-lg {
   z-index: 3 !important;
 }
 
-.pg-top-3rem {
-  padding-top: 3rem !important;
-}
-
-.pg-y-3rem {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
-
 .radius-1rem {
   border-radius: 1rem !important;
 }
@@ -15968,13 +15887,6 @@ textarea.form-control-lg {
   .text-sm-center {
     text-align: center !important;
   }
-  .pg-top-sm-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-sm-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-sm-1rem {
     border-radius: 1rem !important;
   }
@@ -16574,13 +16486,6 @@ textarea.form-control-lg {
   }
   .text-md-center {
     text-align: center !important;
-  }
-  .pg-top-md-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-md-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
   }
   .radius-md-1rem {
     border-radius: 1rem !important;
@@ -17182,13 +17087,6 @@ textarea.form-control-lg {
   .text-lg-center {
     text-align: center !important;
   }
-  .pg-top-lg-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-lg-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-lg-1rem {
     border-radius: 1rem !important;
   }
@@ -17788,13 +17686,6 @@ textarea.form-control-lg {
   }
   .text-xl-center {
     text-align: center !important;
-  }
-  .pg-top-xl-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-xl-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
   }
   .radius-xl-1rem {
     border-radius: 1rem !important;
@@ -18396,13 +18287,6 @@ textarea.form-control-lg {
   .text-xxl-center {
     text-align: center !important;
   }
-  .pg-top-xxl-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-xxl-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-xxl-1rem {
     border-radius: 1rem !important;
   }
@@ -19003,13 +18887,6 @@ textarea.form-control-lg {
   .text-new-xxl-center {
     text-align: center !important;
   }
-  .pg-top-new-xxl-3rem {
-    padding-top: 3rem !important;
-  }
-  .pg-y-new-xxl-3rem {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
   .radius-new-xxl-1rem {
     border-radius: 1rem !important;
   }
@@ -19101,8 +18978,7 @@ textarea.form-control-lg {
 .contacts {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden auto;
 }
 .contacts::-webkit-scrollbar {
   display: none;
@@ -19116,15 +18992,10 @@ textarea.form-control-lg {
   background-color: #4545A5;
 }
 
-.focus-contacts:hover {
-  background-color: #4545A5;
-}
-
 .chats {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden auto;
 }
 .chats::-webkit-scrollbar {
   display: none;
@@ -19151,8 +19022,7 @@ textarea.form-control-lg {
 .current-chat {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden auto;
 }
 .current-chat::-webkit-scrollbar {
   display: none;
