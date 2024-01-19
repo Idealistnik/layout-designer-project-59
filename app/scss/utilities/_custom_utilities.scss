@@ -41,44 +41,64 @@ $utilities: map-merge(
 $utilities: map-merge(
   $utilities,
   (
-    "border": map-merge(
+    "border":
+     map-merge(
       map-get($utilities, "border"),
-      (responsive: true,
-      values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
-      0: 0),
+      (
+        responsive: true,
+        values: (
+          null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
+          0: 0,
+        ),
+      ),
     ),
-  ),
-  "border-top": map-merge(
-    map-get($utilities, "border-top"),
-    (responsive: true,
-    values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
-    0: 0),
+    "border-top":
+     map-merge(
+      map-get($utilities, "border-top"),
+      (
+        responsive: true,
+        values: (
+          null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
+          0: 0,
+        ),
+      ),
     ),
-  ),
-    "border-bottom": map-merge(
+    "border-bottom":
+     map-merge(
       map-get($utilities, "border-bottom"),
-      (responsive: true,
-      values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
-      0: 0),
+      (
+        responsive: true,
+        values: (
+          null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
+          0: 0,
+        ),
+      ),
     ),
-  ),
-    "border-start": map-merge(
+    "border-start":
+     map-merge(
       map-get($utilities, "border-start"),
-      (responsive: true,
-      values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
-      0: 0),
+      (
+        responsive: true,
+        values: (
+          null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
+          0: 0,
+        ),
+      ),
     ),
-  ),
-    "border-end": map-merge(
+    "border-end":
+     map-merge(
       map-get($utilities, "border-end"),
-      (responsive: true,
-      values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
-      0: 0),
+      (
+        responsive: true,
+        values: (
+          null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) map-get($theme-colors, "gray"),
+          0: 0,
+        ),
+      ),
     ),
   ),
-),
 );
-
+    
 @mixin hide-scrollbar() {
   & {
     -ms-overflow-style: none;
