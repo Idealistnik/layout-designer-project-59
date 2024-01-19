@@ -1,6 +1,6 @@
 
 .contacts {
-  @include hide-scrollbar();
+  @include hide-scrollbar;
 }
 
 .link-contacts {
@@ -8,9 +8,5 @@
 }
 
 .focus-contacts:hover {
-  background-color: $primary;
-}
-
-.focus-contacts:hover  {
   background-color: $primary;
 }

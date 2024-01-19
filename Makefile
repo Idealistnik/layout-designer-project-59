@@ -6,8 +6,8 @@ lint:
 	npx stylelint ./app/scss/**/*.scss
 	npx htmlhint ./build/**/*.html
 
-# bint:
-# 	npx pug-lint ./app/chat.pug
+pug-lint:
+	npx pug-lint ./app/**/*.pug
 
 deploy:
 	npx surge ./build
@@ -30,10 +30,10 @@ conv:
 conv-s:
 	sass --watch ./app/scss/app.scss:./build/styles/app.css
 
-ss:
+vs:
 	code .
 	
-com:
+commit:
 	git add .
 	git commit -m 'fix'
 	git push

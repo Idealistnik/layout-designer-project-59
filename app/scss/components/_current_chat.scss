@@ -1,16 +1,10 @@
-// .cursor-text {
-//   top: 26%;
-//   right: 21%;
-// }
-
 .current-chat {
-  @include hide-scrollbar();
+  @include hide-scrollbar;
 }
 
 @include media-breakpoint-down(sm) {
   .circle {
     width: 42px;
     height: 42px; 
-
   }
 }

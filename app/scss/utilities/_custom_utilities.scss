@@ -38,8 +38,6 @@ $utilities: map-merge($utilities,
     ),
   ),
 );
-
-
 $utilities: map-merge($utilities,
   ("border": map-merge(map-get($utilities, "border"),
       (responsive: true,
@@ -73,8 +71,8 @@ $utilities: map-merge($utilities,
     ),
   ),
 );
-// не получается сделать значение 1.5 ?? ((
 
+// не получается сделать значение 1.5 ?? ((
 // $utilities: map.merge($utilities,
 //   ("padding-x-1.5rem": (property: padding-left padding-right,
 //       class: pg-x,
@@ -86,8 +84,7 @@ $utilities: map-merge($utilities,
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden auto;
   }
 
   &::-webkit-scrollbar {
