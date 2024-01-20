@@ -18990,6 +18990,10 @@ textarea.form-control-lg {
 
 .focus-contacts:hover {
   background-color: #4545A5;
+  color: #FBFBFB;
+}
+.focus-contacts:hover small, .focus-contacts:hover .small {
+  color: #efefef !important;
 }
 
 .chats {
@@ -19011,6 +19015,10 @@ textarea.form-control-lg {
 
 .focus-chats:hover {
   background-color: #4545A5;
+  color: #FBFBFB;
+}
+.focus-chats:hover small, .focus-chats:hover .small {
+  color: #efefef !important;
 }
 
 .overflow {

@@ -12,6 +12,10 @@
 
 .focus-chats:hover {
   background-color: $primary;
+  color: $light;
+    & small {
+      color: #efefef !important;
+    }
 }
 
 .overflow {

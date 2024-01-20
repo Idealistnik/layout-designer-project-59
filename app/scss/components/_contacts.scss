@@ -8,4 +8,9 @@
 
 .focus-contacts:hover {
   background-color: $primary;
+  color: $light;
+    & small {
+      color: #efefef !important;
+
+    }
 }
