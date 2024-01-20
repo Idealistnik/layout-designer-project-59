@@ -2,11 +2,11 @@
   "name": "layout-designer-project-59",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Idealistnik/layout-designer-project-59/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Idealistnik/layout-designer-project-59/actions)",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Pavlov Nikita",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",

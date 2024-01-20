@@ -35,6 +35,8 @@ const buildPug = () => {
 }
 
 const watchers = () => {
+  console.log('Наблюдаем за изменениями файлов');
+
   watch('app/**/*.pug', {
     events: 'change'
   }, buildPug);
@@ -44,34 +46,38 @@ const watchers = () => {
 }
 
 const copyFile = () => {
+  console.log('Копируем файлы');
+
   return src('app/images/**/*')
     .pipe(dest('build/images'));
 }
 
-// const svgspriteConfig = {
-//   mode: {
-//     css: { // Activate the «css» mode
-//       render: {
-//         css: true // Activate CSS output (with default options)
-//       }
-//     }
-//   }
-// };
-
 const svgspriteConfig = {
   mode: {
-    stack: {
-        sprite: "../sprite.svg"  //sprite file name
+    css: { // Activate the «css» mode
+      render: {
+        css: true // Activate CSS output (with default options)
+      }
     }
-  },
-}
+  }
+};
+
+// const svgspriteConfig = {
+//   mode: {
+//     stack: {
+//         sprite: "../sprite.svg", //sprite file name
+//         example: true
+//     }
+//   },
+// }
 
 const buildSvg = () => {
+  console.log('Создаем спрайт');
+
   return src('app/images/icons/**/*.svg')
     .pipe(svgSprite(svgspriteConfig))
     .pipe(dest('build/images/icons'));
 };
-
 
 exports.copy = copyFile;
 exports.watch = watchers;

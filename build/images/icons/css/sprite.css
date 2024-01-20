@@ -1,0 +1,27 @@
+.svg-chat_2 {
+    background: url("svg/sprite.css-e864199b.svg") 0 0 no-repeat;
+}
+
+.svg-chat_2-dims {
+    width: 25px;
+    height: 25px;
+}
+
+.svg-people_2 {
+    background: url("svg/sprite.css-e864199b.svg") 100% 0 no-repeat;
+}
+
+.svg-people_2-dims {
+    width: 25px;
+    height: 25px;
+}
+
+.svg-person_2 {
+    background: url("svg/sprite.css-e864199b.svg") 0 100% no-repeat;
+}
+
+.svg-person_2-dims {
+    width: 25px;
+    height: 25px;
+}
+
