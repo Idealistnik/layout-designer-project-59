@@ -18,6 +18,9 @@ build-file:
 build-Pug:
 	npx gulp buildPug
 
+svg:
+	npx gulp buildSvg
+
 server:
 	npx gulp server
 
