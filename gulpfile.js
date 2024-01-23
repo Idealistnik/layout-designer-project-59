@@ -91,4 +91,4 @@ exports.watch = watchers;
 exports.buildPug = buildPug;
 exports.buildSvg = buildSvg;
 // exports.server = browserSyncJob;
-exports.build = parallel(buildSass, buildPug, copyFile);
+exports.build = parallel(buildSass, buildPug, copyFile, buildSvg);

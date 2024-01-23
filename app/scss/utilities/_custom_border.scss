@@ -3,44 +3,6 @@
 $utilities: map-merge(
   $utilities,
   (
-    "border-radius": (
-      property: border-radius,
-      class: radius,
-      responsive: true,
-      values: 1rem,
-    ),
-    "border-top-left-radius": (
-      property: border-top-left-radius,
-      class: radius-left-top,
-      responsive: true,
-      values: 1rem,
-    ),
-    "border-top-right-radius": (
-      property: border-top-right-radius,
-      class: radius-right-top,
-      responsive: true,
-      values: (
-        1rem: 1rem,
-        0: 0,
-      ),
-    ),
-    "border-left-radius": (
-      property: border-top-left-radius border-bottom-left-radius,
-      class: radius-left,
-      responsive: true,
-      values: 1rem,
-    ),
-    "border-right-radius": (
-      property: border-top-right-radius border-bottom-right-radius,
-      class: radius-right,
-      responsive: true,
-      values: 1rem,
-    ),
-  ),
-);
-$utilities: map-merge(
-  $utilities,
-  (
     "border":
     map-merge(
       map-get($utilities, "border"),
@@ -98,15 +60,3 @@ $utilities: map-merge(
     ),
   ),
 );
-
-@mixin hide-scrollbar() {
-  & {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: hidden auto;
-  }
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}

@@ -1,17 +1,11 @@
 doctype html
 html.h-100(lang='ru')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title layout-designer-project-59
-    link(rel='stylesheet', href='./styles/app.css')
-    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM', crossorigin='anonymous')
-
+  include pug_sections/head.pug 
   body.h-100.bg-gray
-    div.container-new-xxl.min-vh-100.p-0.p-sm-4.h-100
+    div.container-xxl.p-0.p-sm-4.h-100
       h1.visually-hidden Хекслет раздел чата
       div.row.m-0.bg-white.h-100.radius-sm-1rem
-        section.col-lg-4.border-end.px-0.h-100.overflow-hidden
+        section.col-lg-4.border-end.px-0.h-100
           h2.visually-hidden Раздел навигации
           div.tab-content.d-flex.flex-column.h-100(id='nav-tab-content')
             header.bg-primary.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.order-1.order-sm-0
@@ -19,7 +13,7 @@ html.h-100(lang='ru')
                 div.nav.nav-tabs.align-items-center.p-3(id='nav-tab', role='tablist')
 
                   a.me-sm-3.me-auto
-                    img.me-1.logo-header(src='./images/sprite.svg#logo', width=25, alt='Логотип Хекслет')
+                    img.me-1.logo-header.svg-white(src='./images/sprite.svg#logo', width=25, alt='Логотип Хекслет')
 
                   a.nav-link.p-0.link-light.d-sm-none.bg-transparent.border.border-0.me-4.ms-2.my-2(id='current-chat', href='#current-chat', data-bs-toggle='tab', data-bs-target='#nav-current-chat', role='tab', aria-controls='nav-current-chat', aria-selected='false')
                     img.me-sm-2(src='./images/sprite.svg#chat-left-text_1', width=25, alt='Иконка Текущий чат')
