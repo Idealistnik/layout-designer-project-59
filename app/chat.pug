@@ -2,10 +2,10 @@ doctype html
 html.h-100(lang='ru')
   include pug_sections/head.pug 
   body.h-100.bg-gray
-    div.container-xxl.p-0.p-sm-4.h-100
+    div.container-new-xxl.p-0.p-sm-4.h-100
       h1.visually-hidden Хекслет раздел чата
       div.row.m-0.bg-white.h-100.radius-sm-1rem
-        section.col-lg-5.border-end.px-0.h-100s
+        section.col-lg-4.border-end.px-0.h-100s
           h2.visually-hidden Раздел навигации
           div.tab-content.d-flex.flex-column.h-100(id='nav-tab-content')
             header.bg-primary.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.order-1.order-sm-0
@@ -46,7 +46,7 @@ html.h-100(lang='ru')
               div.py-5.px-4.profile.h-100
                 include pug_sections/profile.pug
 
-        section.col-lg-7.px-0.d-none.d-lg-flex.h-100
+        section.col-lg-8.px-0.d-none.d-lg-flex.h-100
           div.current-chat.h-100
             h2.visually-hidden Раздел чата
             include ./pug_sections/current_chat.pug
