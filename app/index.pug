@@ -2,38 +2,38 @@ doctype html
 html.h-100(lang='ru')
   include pug_sections/head.pug 
   body.h-100.bg-gray
-    div.container-xxl.p-0.p-sm-4.h-100
+    div.container-xxl.h-100.p-0.p-sm-4
       h1.visually-hidden Хекслет чат
-      div.row.m-0.bg-white.h-100.radius-sm-1rem
-        section.col-lg-4.border-end.px-0.h-100
+      div.row.h-100.m-0.radius-sm-1rem.bg-white
+        section.col-lg-4.h-100.border-end.px-0
           h2.visually-hidden Раздел навигации
           div.tab-content.d-flex.flex-column.h-100(id='nav-tab-content')
-            header.bg-primary.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.order-1.order-sm-0
+            header.radius-left-top-sm-1rem.radius-right-top-sm-1rem.radius-right-top-lg-0.order-1.order-sm-0.bg-primary
               nav.nav.align-items-center(role='tablist')            
                 a.me-sm-3.me-auto.my-4.my-sm-3.ms-3               
-                  img.me-1.logo-header.svg-white(src='./images/sprite.svg#logo', width=25, alt='Логотип Хекслет')
-                a.nav-link.p-0.link-light.active.bg-transparent.me-4.ms-2(id='contacts', href='#contacts', data-bs-toggle='tab', data-bs-target='#nav-contacts', role='tab', aria-controls='nav-contacts', aria-selected='true')                    
+                  img.logo-header.svg-white.me-1(src='./images/sprite.svg#logo', width=25, alt='Логотип Хекслет')
+                a.nav-link.link-light.active.bg-transparent.me-4.ms-2.p-0(id='contacts', href='#contacts', data-bs-toggle='tab', data-bs-target='#nav-contacts', role='tab', aria-controls='nav-contacts', aria-selected='true')                    
                   img.me-sm-2.svg-white(src='./images/sprite.svg#people', width=25, alt='Иконка Контакты')
                   small.d-none.d-sm-inline Контакты    
-                a.nav-link.p-0.link-light.bg-transparent.me-4.ms-2(id='chats', href='#chats', data-bs-toggle='tab', data-bs-target='#nav-chats', role='tab', aria-controls='nav-chats', aria-selected='false')
+                a.nav-link.link-light.bg-transparent.me-4.ms-2.p-0(id='chats', href='#chats', data-bs-toggle='tab', data-bs-target='#nav-chats', role='tab', aria-controls='nav-chats', aria-selected='false')
                   img.me-sm-2.svg-white(src='./images/sprite.svg#chat', width=25, alt='Иконка Сообщения')
                   small.d-none.d-sm-inline Сообщения
-                a.nav-link.p-0.link-light.bg-transparent.ms-2(id='profile', href='#profile', data-bs-toggle='tab', data-bs-target='#nav-profile', role='tab', aria-controls='nav-profile', aria-selected='false')
+                a.nav-link.link-light.bg-transparent.ms-2.p-0(id='profile', href='#profile', data-bs-toggle='tab', data-bs-target='#nav-profile', role='tab', aria-controls='nav-profile', aria-selected='false')
                   img.me-sm-2.svg-white(src='./images/sprite.svg#person', width=25, alt='Иконка Профиль')
                   small.d-none.d-sm-inline Профиль 
 
-            div.tab-pane.fade.show.active.h-100.overflow-hidden(id='nav-contacts', role='tabpanel', aria-labelledby='nav-contacts', tabindex='0')
-              div.py-5.px-4.h-100.hide-scrollbar
+            div.tab-pane.fade.show.active.overflow-hidden.h-100(id='nav-contacts', role='tabpanel', aria-labelledby='nav-contacts', tabindex='0')
+              div.h-100.hide-scrollbar.py-5.px-4
                 include pug_sections/contacts.pug         
 
-            div.tab-pane.fade.h-100.overflow-hidden(id='nav-chats', role='tabpanel', aria-labelledby='nav-chats', tabindex='0')
-              div.py-5.px-4.h-100.hide-scrollbar
+            div.tab-pane.fade.overflow-hidden.h-100(id='nav-chats', role='tabpanel', aria-labelledby='nav-chats', tabindex='0')
+              div.h-100.hide-scrollbar.py-5.px-4
                 include pug_sections/chats.pug
 
-            div.tab-pane.fade.h-100.overflow-hidden(id='nav-profile', role='tabpanel', aria-labelledby='nav-profile', tabindex='0')
-              div.py-5.px-4.h-100.hide-scrollbar
+            div.tab-pane.fade.overflow-hidden.h-100(id='nav-profile', role='tabpanel', aria-labelledby='nav-profile', tabindex='0')
+              div.h-100.hide-scrollbar.py-5.px-4
                 include pug_sections/profile.pug
 
-        section.col-lg-8.justify-content-center.align-items-center.px-0.d-none.d-lg-flex
+        section.col-lg-8.d-none.d-lg-flex.justify-content-center.align-items-center.px-0
           h2.visually-hidden Раздел приветственного сообщения
           include ./pug_sections/avatar.pug

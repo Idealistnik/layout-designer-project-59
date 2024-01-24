@@ -8,18 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
   <body class="h-100 bg-gray">
-    <div class="container-xxl p-0 p-sm-4 h-100">
+    <div class="container-xxl h-100 p-0 p-sm-4">
       <h1 class="visually-hidden">Хекслет чат</h1>
-      <div class="row m-0 bg-white h-100 radius-sm-1rem">
-        <section class="col-lg-4 border-end px-0 h-100">
+      <div class="row h-100 m-0 radius-sm-1rem bg-white">
+        <section class="col-lg-4 h-100 border-end px-0">
           <h2 class="visually-hidden">Раздел навигации</h2>
           <div class="tab-content d-flex flex-column h-100" id="nav-tab-content">
-            <header class="bg-primary radius-left-top-sm-1rem radius-right-top-sm-1rem radius-right-top-lg-0 order-1 order-sm-0">
-              <nav class="nav align-items-center" role="tablist">           <a class="me-sm-3 me-auto my-4 my-sm-3 ms-3">              <img class="me-1 logo-header svg-white" src="./images/sprite.svg#logo" width="25" alt="Логотип Хекслет"></a><a class="nav-link p-0 link-light active bg-transparent me-4 ms-2" id="contacts" href="#contacts" data-bs-toggle="tab" data-bs-target="#nav-contacts" role="tab" aria-controls="nav-contacts" aria-selected="true">                   <img class="me-sm-2 svg-white" src="./images/sprite.svg#people" width="25" alt="Иконка Контакты"><small class="d-none d-sm-inline">Контакты    </small></a><a class="nav-link p-0 link-light bg-transparent me-4 ms-2" id="chats" href="#chats" data-bs-toggle="tab" data-bs-target="#nav-chats" role="tab" aria-controls="nav-chats" aria-selected="false"><img class="me-sm-2 svg-white" src="./images/sprite.svg#chat" width="25" alt="Иконка Сообщения"><small class="d-none d-sm-inline">Сообщения</small></a><a class="nav-link p-0 link-light bg-transparent ms-2" id="profile" href="#profile" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="me-sm-2 svg-white" src="./images/sprite.svg#person" width="25" alt="Иконка Профиль"><small class="d-none d-sm-inline">Профиль </small></a></nav>
+            <header class="radius-left-top-sm-1rem radius-right-top-sm-1rem radius-right-top-lg-0 order-1 order-sm-0 bg-primary">
+              <nav class="nav align-items-center" role="tablist">           <a class="me-sm-3 me-auto my-4 my-sm-3 ms-3">              <img class="logo-header svg-white me-1" src="./images/sprite.svg#logo" width="25" alt="Логотип Хекслет"></a><a class="nav-link link-light active bg-transparent me-4 ms-2 p-0" id="contacts" href="#contacts" data-bs-toggle="tab" data-bs-target="#nav-contacts" role="tab" aria-controls="nav-contacts" aria-selected="true">                   <img class="me-sm-2 svg-white" src="./images/sprite.svg#people" width="25" alt="Иконка Контакты"><small class="d-none d-sm-inline">Контакты    </small></a><a class="nav-link link-light bg-transparent me-4 ms-2 p-0" id="chats" href="#chats" data-bs-toggle="tab" data-bs-target="#nav-chats" role="tab" aria-controls="nav-chats" aria-selected="false"><img class="me-sm-2 svg-white" src="./images/sprite.svg#chat" width="25" alt="Иконка Сообщения"><small class="d-none d-sm-inline">Сообщения</small></a><a class="nav-link link-light bg-transparent ms-2 p-0" id="profile" href="#profile" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="me-sm-2 svg-white" src="./images/sprite.svg#person" width="25" alt="Иконка Профиль"><small class="d-none d-sm-inline">Профиль </small></a></nav>
             </header>
-            <div class="tab-pane fade show active h-100 overflow-hidden" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts" tabindex="0">
-              <div class="py-5 px-4 h-100 hide-scrollbar">
-                <section class="h-100">
+            <div class="tab-pane fade show active overflow-hidden h-100" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts" tabindex="0">
+              <div class="h-100 hide-scrollbar py-5 px-4">
+                <section>
                   <h2 class="fw-bold mb-4">Контакты</h2>
                   <form class="mb-5" action="mailto:nikitapavlov2015@gmail.com">
                     <label class="form-label visually-hidden" for="contacts-search">Поиск по контактам</label>
@@ -59,9 +59,9 @@
                 </section>
               </div>
             </div>
-            <div class="tab-pane fade h-100 overflow-hidden" id="nav-chats" role="tabpanel" aria-labelledby="nav-chats" tabindex="0">
-              <div class="py-5 px-4 h-100 hide-scrollbar">
-                <section class="h-100">
+            <div class="tab-pane fade overflow-hidden h-100" id="nav-chats" role="tabpanel" aria-labelledby="nav-chats" tabindex="0">
+              <div class="h-100 hide-scrollbar py-5 px-4">
+                <section>
                   <h2 class="fw-bold mb-4">Чаты</h2>
                   <form class="mb-5" action="mailto:nikitapavlov2015@gmail.com">
                     <label class="form-label visually-hidden" for="chats-search">Поиск по сообщениям</label>
@@ -80,9 +80,9 @@
                 </section>
               </div>
             </div>
-            <div class="tab-pane fade h-100 overflow-hidden" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile" tabindex="0">
-              <div class="py-5 px-4 h-100 hide-scrollbar">
-                <section class="h-100">
+            <div class="tab-pane fade overflow-hidden h-100" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile" tabindex="0">
+              <div class="h-100 hide-scrollbar py-5 px-4">
+                <section>
                   <h2 class="fw-bold mb-4">Профиль</h2>
                   <form class="mb-5" action="mailto:nikitapavlov2015@gmail.com">
                     <label class="form-label visually-hidden" for="profile-search">Поиск по сообщениям</label>
@@ -113,7 +113,7 @@
             </div>
           </div>
         </section>
-        <section class="col-lg-8 justify-content-center align-items-center px-0 d-none d-lg-flex">
+        <section class="col-lg-8 d-none d-lg-flex justify-content-center align-items-center px-0">
           <h2 class="visually-hidden">Раздел приветственного сообщения</h2>
           <section class="text-center mt-auto mb-auto">
             <h2 class="visually-hidden">Аватар-приветствие</h2><img class="avatar-image" src="./images/avatar_1.jpg" alt="Аватарка"><span class="fw-bold text-gray-dark d-block">Привет, Кодовёнок</span><small class="text-secondary">Выбери чат, чтобы начать общаться</small>
