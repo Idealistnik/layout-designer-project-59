@@ -9,11 +9,11 @@ const pug = require('gulp-pug');
 const svgSprite = require('gulp-svg-sprite');
 const browserSync = require('browser-sync').create();
 
-// const browserSyncJob = () => {
-//   browserSync.init({
-//     server: "build/"
-//   });
-// };
+const browserSyncJob = () => {
+  browserSync.init({
+    server: "build/"
+  });
+};
 
 const buildSass = () => {
   console.log('Компиляция SASS');
@@ -21,7 +21,7 @@ const buildSass = () => {
   return src('app/scss/app.scss')
     .pipe(sass())
     .pipe(dest('build/styles/'))
-    // .pipe(browserSync.stream());
+    .pipe(browserSync.stream());
 }
 
 const buildPug = () => {
@@ -30,7 +30,7 @@ const buildPug = () => {
   return src('app/*.pug')
     .pipe(pug({pretty: true}))   
     .pipe(dest('build/'))
-    // .pipe(browserSync.stream());
+    .pipe(browserSync.stream());
     
 }
 
@@ -52,28 +52,10 @@ const copyFile = () => {
     .pipe(dest('build/images'));
 }
 
-// const svgspriteConfig = {
-//   mode: {
-//     css: { // Activate the «css» mode
-//       render: {
-//         css: true // Activate CSS output (with default options)
-//       }
-//     }
-//   }
-// };
-
-// const svgspriteConfig = {
-//   mode: {
-//     inline: true;
-//     symbol: true;
-//   }
-// };
-
 const svgspriteConfig = {
   mode: {
     stack: {
-        sprite: "../sprite.svg", //sprite file name
-        // example: true
+        sprite: "../sprite.svg",
     }
   },
 }
@@ -90,5 +72,5 @@ exports.copy = copyFile;
 exports.watch = watchers;
 exports.buildPug = buildPug;
 exports.buildSvg = buildSvg;
-// exports.server = browserSyncJob;
+exports.server = browserSyncJob;
 exports.build = parallel(buildSass, buildPug, copyFile, buildSvg);
