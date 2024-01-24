@@ -4,14 +4,13 @@ section.h-100
   form.mb-5(action='mailto:nikitapavlov2015@gmail.com')
     label.form-label.visually-hidden(for='contacts-search') Поиск по контактам
     input.form-control.border-0.border-bottom.rounded-0.text-secondary.shadow-none.px-4.py-4(type='search', id='contacts-search', aria-label='contacts-search', placeholder='Поиск по контактам')
-  div.contacts-list  
+  div 
     each user_info, letter in contacts
       p.text-secondary.mt-5= letter  
       each user in user_info
         div.shadow-sm.mb-3
-          a.link-contacts.focus-contacts.link-underline.link-underline-opacity-0.d-flex(href='#')                
-            div.d-flex.align-items-center
-              img.rounded-circle.ms-3.me-4(width=50, height=50, src= user.avatar, alt='Аватарка')
-              div.py-4
-                span.fw-bold.d-block= user.name
-                small.text-secondary= user.status
+          a.link-contacts.focus-contacts.link-underline.link-underline-opacity-0.d-flex.align-items-center(href='#')              
+            img.rounded-circle.ms-3.me-4(width=50, height=50, src= user.avatar, alt='Аватарка')
+            div.py-4
+              div.fw-bold= user.name
+              small.text-secondary= user.status
