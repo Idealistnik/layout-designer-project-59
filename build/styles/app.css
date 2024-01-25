@@ -17388,7 +17388,7 @@ textarea.form-control-lg {
   border-radius: 50rem;
   width: 200px;
   height: 200px;
-  padding-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .text-gray-dark {
