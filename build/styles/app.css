@@ -12,7 +12,7 @@
   filter: invert(1);
 }
 
-#card-img {
+.card-imagine {
   width: 90px;
   height: 90px;
   text-align: center;
@@ -17409,14 +17409,14 @@ textarea.form-control-lg {
   text-overflow: ellipsis;
 }
 
-#circle {
+.btn.ms-1.me-3.me-sm-0.bg-primary.align-self-center.circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
 @media (max-width: 575.98px) {
-  #circle {
+  .btn.ms-1.me-3.me-sm-0.bg-primary.align-self-center.circle {
     width: 42px;
     height: 42px;
   }
