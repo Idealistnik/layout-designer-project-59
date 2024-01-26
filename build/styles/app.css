@@ -25,9 +25,6 @@
     height: 25px;
     margin-left: 5px;
   }
-  .mg-t-64 {
-    margin-top: 64px;
-  }
 }
 .align-baseline {
   vertical-align: baseline !important;
@@ -17386,8 +17383,8 @@ textarea.form-control-lg {
   background-color: #4545A5;
   color: #FBFBFB;
 }
-.focus-contacts:hover small.text-secondary#user-status, .focus-contacts:hover .text-secondary#user-status.small {
-  color: #efefef;
+.focus-contacts:hover small, .focus-contacts:hover .small {
+  color: #efefef !important;
 }
 
 .time {

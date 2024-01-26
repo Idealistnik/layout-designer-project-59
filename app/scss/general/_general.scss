@@ -6,12 +6,6 @@
   filter: invert(1);
 }
 
-// .nav-link:focus,
-// .nav-link:hover {
-//   // border-color: $primary;
-//   // background-color: $primary;
-// }
-
 #card-img {
   width: 90px;
   height: 90px;
@@ -20,30 +14,10 @@
 }
 
 @include media-breakpoint-down(sm) {
-  // для шапки (табов)
 
   img.logo-header {
     width: 15px;
     height: 25px;
     margin-left: 5px;
   }
-
-  // a.nav-link {
-  //   margin-right: 40px !important;
-  //   margin-left: 0 !important;
-  // }
-
-  // a.nav-link:last-of-type {
-  //   margin-right: 24px !important;
-  // }
-
-  // для profile
-
-  .mg-t-64 {
-    margin-top: 64px;
-  }
-
-  // .pg-left-14 {
-  //   padding-left: 14.6px !important;
-  // }
 }
