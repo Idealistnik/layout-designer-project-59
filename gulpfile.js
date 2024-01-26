@@ -13,6 +13,9 @@ const browserSyncJob = () => {
   browserSync.init({
     server: "build/"
   });
+
+  watch('app/scss/**/*.scss', buildSass);
+  watch('app/**/*.pug', buildPug);
 };
 
 const buildSass = () => {
@@ -30,8 +33,7 @@ const buildPug = () => {
   return src('app/*.pug')
     .pipe(pug({pretty: true}))   
     .pipe(dest('build/'))
-    .pipe(browserSync.stream());
-    
+    .pipe(browserSync.stream());  
 }
 
 const watchers = () => {

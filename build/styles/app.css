@@ -12,38 +12,21 @@
   filter: invert(1);
 }
 
-.nav-link:focus,
-.nav-link:hover {
-  border-color: #4545A5 !important;
-  background-color: #4545A5 !important;
-}
-
-.card-img {
-  width: 90px !important;
+#card-img {
+  width: 90px;
   height: 90px;
-  text-align: center !important;
-  border-radius: 50rem !important;
+  text-align: center;
+  border-radius: 50rem;
 }
 
 @media (max-width: 575.98px) {
   img.logo-header {
     width: 15px;
     height: 25px;
-    margin-left: 5px !important;
-    margin-right: 0 !important;
-  }
-  a.nav-link {
-    margin-right: 40px !important;
-    margin-left: 0 !important;
-  }
-  a.nav-link:last-of-type {
-    margin-right: 24px !important;
+    margin-left: 5px;
   }
   .mg-t-64 {
     margin-top: 64px;
-  }
-  .pg-left-14 {
-    padding-left: 14.6px !important;
   }
 }
 .align-baseline {
@@ -17403,8 +17386,8 @@ textarea.form-control-lg {
   background-color: #4545A5;
   color: #FBFBFB;
 }
-.focus-contacts:hover small, .focus-contacts:hover .small {
-  color: #efefef !important;
+.focus-contacts:hover small.text-secondary#user-status, .focus-contacts:hover .text-secondary#user-status.small {
+  color: #efefef;
 }
 
 .time {

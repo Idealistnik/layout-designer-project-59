@@ -6,17 +6,17 @@
   filter: invert(1);
 }
 
-.nav-link:focus,
-.nav-link:hover {
-  border-color: $primary !important;
-  background-color: $primary !important;
-}
+// .nav-link:focus,
+// .nav-link:hover {
+//   // border-color: $primary;
+//   // background-color: $primary;
+// }
 
-.card-img {
-  width: 90px !important;
+#card-img {
+  width: 90px;
   height: 90px;
-  text-align: center !important;
-  border-radius: $border-radius-pill !important;
+  text-align: center;
+  border-radius: $border-radius-pill;
 }
 
 @include media-breakpoint-down(sm) {
@@ -25,18 +25,17 @@
   img.logo-header {
     width: 15px;
     height: 25px;
-    margin-left: 5px !important;
-    margin-right: 0 !important;
+    margin-left: 5px;
   }
 
-  a.nav-link {
-    margin-right: 40px !important;
-    margin-left: 0 !important;
-  }
+  // a.nav-link {
+  //   margin-right: 40px !important;
+  //   margin-left: 0 !important;
+  // }
 
-  a.nav-link:last-of-type {
-    margin-right: 24px !important;
-  }
+  // a.nav-link:last-of-type {
+  //   margin-right: 24px !important;
+  // }
 
   // для profile
 
@@ -44,7 +43,7 @@
     margin-top: 64px;
   }
 
-  .pg-left-14 {
-    padding-left: 14.6px !important;
-  }
+  // .pg-left-14 {
+  //   padding-left: 14.6px !important;
+  // }
 }

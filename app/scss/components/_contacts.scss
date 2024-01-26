@@ -6,7 +6,7 @@
   background-color: $primary;
   color: $light;
 
-  & small {
-    color: #efefef !important;
+  & small.text-secondary#user-status {
+    color: #efefef;
   }
 }
