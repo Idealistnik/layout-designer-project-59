@@ -17409,14 +17409,14 @@ textarea.form-control-lg {
   text-overflow: ellipsis;
 }
 
-.circle {
+#circle {
   width: 50px;
   height: 50px;
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 
 @media (max-width: 575.98px) {
-  .circle {
+  #circle {
     width: 42px;
     height: 42px;
   }
