@@ -6,13 +6,6 @@
   filter: invert(1);
 }
 
-.card-imagine {
-  width: 90px;
-  height: 90px;
-  text-align: center;
-  border-radius: $border-radius-pill;
-}
-
 @include media-breakpoint-down(sm) {
   img.logo-header {
     width: 15px;
